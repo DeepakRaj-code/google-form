@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Fprm</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(59, 169, 221);
+        }
+        .google{
+            color:white;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .deepak{
+            width:43vw;
+            height:150vh;
+            border-radius: 20px;
+        }
+        .gap{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .name{
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        .select{
+            padding: 5px;
+        }
+        .form{
+            width: 37vw;
+            height: 5vh;
+        }
+        .name1{
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            margin-left: 20px;
+            font-size: 20px;
+            gap: 10px;
+        }
+        .gender{
+            font-size: 15px;
+        }
+        .submit{
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+        .submit :hover{
+            background-color: rgb(0, 255, 38);
+        }
+        .sub1{
+            border-radius: 10px;
+            background-color: greenyellow;
+        }
+        .sub{
+            width: 15vw;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="google">Google Form</div>
+    <div class="button">
+        <button class="deepak">
+            <div class="gap">
+                <div class="name">
+                    <label for="name">Name: </label>
+                    <br>
+                    <input type="text" class="form" name="name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="name">
+                    <label for="name">Email Id: </label>
+                    <br>
+                    <input type="email" class="form"  name="name" placeholder="Enter Your Email Id" required>
+                </div>
+                <div class="name">
+                    <label for="name">Phone Number: </label>
+                    <br>
+                    <input type="number" class="form"  name="Phone" placeholder="Enter Your Phone Number" required>
+                </div>
+                <div class="name">
+                    College/Organisation:
+                    <br>
+                    <br>
+                    <select name="Toykathon Ideas" class="select" required>
+                        <option value="enter">Select</option>
+                        <option value="BIT Sindri">BIT Sindri</option>
+                        <option value="GEC Palamu">GEC Palamu</option>
+                        <option value="NIT Jmsedhpur">NIT Jmsedhpur</option>
+                        <option value="IIT Khadakpur">IIT Khadakpur</option>
+                    </select>
+                </div>
+                <div class="name">
+                    <label for="name">Registration Number: </label>
+                    <br>
+                    <input type="number" class="form"  name="Phone" placeholder="Enter Your Registration Number" required>
+                </div>
+                <div class="name">
+                    <label for="name">Roll Number: </label>
+                    <br>
+                    <input type="number" class="form"  name="Phone" placeholder="Enter Your Roll Number" required>
+                </div>
+                <div class="name1">
+                    Gender:
+                    <div class="gender" required>
+                        <input type="radio" id="male" name="gender" value="male" >
+                        <label for="male" class="gender">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" class="gender">Female</label>
+                    </div>
+                </div>
+                <div class="name1" required>
+                    Areas of Interest:
+                    <div class="gender">
+                        <input type="radio" id="male" name="Tech1" value="Web Development">
+                        <label for="Web Development" class="gender">Web Development</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="female" name="Tech2" value="CP/DSA">
+                    <label for="CP/DSA" class="gender">CP/DSA</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="female" name="Tech3" value="Artificial Intelligence and Machine Learning">
+                    <label for="Artificial Intelligence and Machine Learning" class="gender">Artificial Intelligence and Machine Learning</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="female" name="Tech4" value="Video Editing">
+                    <label for="Video Editing" class="gender">Video Editing</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="female" name="Tech5" value="Grpahic Designing">
+                    <label for="Graphic Designing" class="gender">Graphic Designing</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="female" name="Tech6" value="Content Writing">
+                    <label for="Content Writing" class="gender">Content Writing</label>
+                    </div>
+                </div>
+            </div>
+        </button>
+    </div>
+    <div class="submit">
+        <a href="done.html">
+            <button class="sub1">
+                <div class="sub">Submit</div>
+            </button>
+        </a>
+    </div>
+</body>
+</html>
